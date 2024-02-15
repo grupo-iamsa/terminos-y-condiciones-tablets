@@ -24,6 +24,7 @@ body{
 }
 nav{
   width: 25%;
+  max-width: 300px;
   padding: 20px 10px;
   border-right: 1px solid var(--primary-color);
   overflow-y: scroll;
@@ -41,17 +42,52 @@ nav{
 
 .principal-menu{
   margin-top: 20px;
+  display: grid;
+  gap: 10px;
+  list-style: disc;
   
   li a{
     display: flex;
     justify-content: space-between;
-    color: var(--primary-color);
     text-decoration: none;
     width: 100%;
+    color: var(--primary-color);
+    font-weight: 500;
 
     svg{
       width: 30px;
       height: 30px;
+      fill: var(--primary-color);
     }
   }
+}
+
+.submenu{
+  padding-left: 20px;
+  list-style: none;
+  display: grid;
+  gap: 7px;
+  
+
+  & li a{
+    font-weight: 100;  
+    justify-content: flex-start;
+    color: #000;
+
+  }
+
+  a::before{
+    content:url(/img/favicon.ico);
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+}
+
+.arrow-open{
+  transform: rotate(90deg);
+}
+
+.active{
+  font-weight: 600 !important;
+  color: var(--secondary-color) !important;
 }
