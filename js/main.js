@@ -1,4 +1,6 @@
 const carousel = document.querySelector(".carousel")
+const screenSaver = document.querySelector(".screen-saver")
+const btnHideScreen = document.querySelector(".btn-hide-screen")
 
 const images = [
   "aviso-migratorio.jpg",
@@ -16,7 +18,7 @@ const initCarousel = ()  =>{
   `
   
   setInterval(() => {
-    console.log(currentSlide)
+    // console.log(currentSlide)
     if(currentSlide === 4){
       currentSlide = 0
     }
@@ -26,7 +28,21 @@ const initCarousel = ()  =>{
 
   currentSlide++
   }, 5000);
+
 }
 
 initCarousel()
+
+btnHideScreen.addEventListener("click", hiddenScreenSaver)
+
+function hiddenScreenSaver(){
+  screenSaver.style.display = "none"
+
+  setTimeout(() =>{
+    screenSaver.style.display = "flex"
+  }, 600000)
+}
+
+
+
 
