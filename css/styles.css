@@ -85,7 +85,7 @@ nav{
 }
 
 .active{
-  font-weight: 600 !important;
+
   color: var(--secondary-color) !important;
 }
 
