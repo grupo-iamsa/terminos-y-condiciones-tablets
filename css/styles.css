@@ -91,6 +91,7 @@ nav{
 
 main{
   max-width: calc(100% - 260px);
+  width: 100%;
   padding: 20px;
   overflow-y: scroll;
   scrollbar-color: #0FBBCF;
