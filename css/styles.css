@@ -142,3 +142,53 @@ a{
   text-decoration: none;
   font-weight: 100;
 }
+
+.screen-saver{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--primary-color);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #fff;
+  font-size: 36px;
+
+  .carousel{
+    width: 80%;
+
+    img{
+      width: 100%;
+      animation: show-slide .5s ease-in;
+    }
+  }
+
+  button{
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 24px;
+    color: #fff;
+    transition: all .2s;
+  }
+
+  button:active{
+    transform: scale(0.95);
+  }
+}
+
+@keyframes show-slide {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
