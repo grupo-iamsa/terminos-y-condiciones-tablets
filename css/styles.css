@@ -144,7 +144,7 @@ a{
 }
 
 .screen-saver{
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -156,10 +156,13 @@ a{
   align-items: center;
   justify-content: space-evenly;
   color: #fff;
-  font-size: 36px;
+  font-size: 28px;
+  text-align: center;
 
   .carousel{
-    width: 80%;
+    background-color: red;
+    height: 60%;
+    aspect-ratio: 16/9;
 
     img{
       width: 100%;
