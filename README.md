@@ -4,6 +4,6 @@ Este es un pequeño proyecto para mostrar los términos y condiciones en el áre
 Prueba de Fer
 
 
-<img align="center" src="./img/preview-1.png" width="80%"/>
+<img align="center" src="./web/img/preview-1.png" width="80%"/>
 <br><br>
-<img align="center" src="./img/preview-2.png" width="80%"/>
+<img align="center" src="./web/img/preview-2.png" width="80%"/>
