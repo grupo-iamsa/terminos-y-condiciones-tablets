@@ -1,4 +1,4 @@
-import 'package:app/screens/termis_screen.dart';
+import 'package:app/screens/screens.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,15 +11,19 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        textTheme: const TextTheme(
-          bodyLarge: TextStyle(fontFamily: 'Roboto')
-        )
-      ),
       debugShowCheckedModeBanner: false,
-      home: const Scaffold(
-        body: TermsScreen()
-      )
+      initialRoute: 'terms',
+      routes: {
+        'terms' : (BuildContext  context) =>  const TermsScreen(),
+        'provider' : (BuildContext  context) =>  const ProviderScreen(),
+        'web' : (BuildContext  context) =>  const WebScreen(),
+        'email' : (BuildContext  context) =>  const EmailScreen(),
+        'account' : (BuildContext  context) =>  const AccountScreen(),
+        'rh' : (BuildContext  context) =>  const RhScreen(),
+        'reception' : (BuildContext  context) =>  const ReceptionScreen(),
+        'switch' : (BuildContext  context) =>  const SwitchScreen(),
+        'cameras' : (BuildContext  context) =>  const CamerasScreen(),
+      },
     );
   }
 }

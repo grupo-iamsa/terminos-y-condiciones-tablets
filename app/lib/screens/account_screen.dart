@@ -1,14 +1,14 @@
+import 'package:app/screens/screens.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
-
-class TermsScreen extends StatelessWidget {
-  const TermsScreen({super.key});
+class AccountScreen extends StatelessWidget {
+  const AccountScreen({super.key});
 
   @override
 Widget build(BuildContext context) {
 
   const primaryColor = Color.fromARGB(255, 1, 54, 94);
+  const accentColor = Color.fromARGB(255, 15, 187, 207);
 
   return Scaffold(
     body: Row(
@@ -30,69 +30,89 @@ Widget build(BuildContext context) {
                 ),
                 Expanded(
                   child: ListView(
-                    
                     children: [
+                      ListTile(
+                        title: const Text('Términos y condiciones', style: TextStyle(color: primaryColor, fontWeight: FontWeight.w700,)),
+                        trailing: const Icon(Icons.keyboard_arrow_right, color: primaryColor,),
+                        onTap: () {
+                          final route = MaterialPageRoute(builder: (context) => const TermsScreen(),);
+                          Navigator.push(context, route );
+                        },
+                      ),
                       const ListTile(
                         title: Text('Aviso de Privacidad', style: TextStyle(color: primaryColor, fontWeight: FontWeight.w700,)),
                         trailing: Icon(Icons.keyboard_arrow_down, color: primaryColor,),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 30),
-                        child: ListTile(
-                          leading: Image.asset('assets/img/favicon.png'),
-                          title: const Text('áreas Comerciales y de proveedores'),
-                          onTap: () {
-                            
-                          },
-                        ),
+                      ListTile(
+                        contentPadding: const EdgeInsets.only(left: 30),
+                        leading: Image.asset('assets/img/favicon.png'),
+                        title: const Text('Áreas Comerciales y de proveedores'),
+                        onTap: () {
+                          final route = MaterialPageRoute(builder: (context) => const ProviderScreen(),);
+                          Navigator.push(context, route );
+                        },
                       ),
                       ListTile(
+                        contentPadding: const EdgeInsets.only(left: 30),
                         leading: Image.asset('assets/img/favicon.png'),
                         title: const Text('Aviso Web'),
                         onTap: () {
-                          
+                          final route = MaterialPageRoute(builder: (context) => const WebScreen(),);
+                          Navigator.push(context, route );
                         },
                       ),
                       ListTile(
+                        contentPadding: const EdgeInsets.only(left: 30),
                         leading: Image.asset('assets/img/favicon.png'),
                         title: const Text('Aviso correo electrónico'),
                         onTap: () {
-                          
+                          final route = MaterialPageRoute(builder: (context) => const EmailScreen(),);
+                          Navigator.push(context, route );
                         },
                       ),
                       ListTile(
+                        contentPadding: const EdgeInsets.only(left: 30),
                         leading: Image.asset('assets/img/favicon.png'),
-                        title: const Text('Aviso estado de cuenta'),
+                        title: const Text('Aviso estado de cuenta', style: TextStyle(color: accentColor)),
                         onTap: () {
-                          
+                          final route = MaterialPageRoute(builder: (context) => const AccountScreen(),);
+                          Navigator.push(context, route );
                         },
                       ),
                       ListTile(
+                        contentPadding: const EdgeInsets.only(left: 30),
                         leading: Image.asset('assets/img/favicon.png'),
                         title: const Text('Aviso integral para áreas de recursos humanos'),
                         onTap: () {
-                          
+                          final route = MaterialPageRoute(builder: (context) => const RhScreen(),);
+                          Navigator.push(context, route );
                         },
                       ),
                       ListTile(
+                        contentPadding: const EdgeInsets.only(left: 30),
                         leading: Image.asset('assets/img/favicon.png'),
                         title: const Text('Aviso de recepción'),
                         onTap: () {
-                          
+                          final route = MaterialPageRoute(builder: (context) => const ReceptionScreen(),);
+                          Navigator.push(context, route );
                         },
                       ),
                       ListTile(
+                        contentPadding: const EdgeInsets.only(left: 30),
                         leading: Image.asset('assets/img/favicon.png'),
                         title: const Text('Aviso de conmutador'),
                         onTap: () {
-                          
+                          final route = MaterialPageRoute(builder: (context) => const SwitchScreen(),);
+                          Navigator.push(context, route );
                         },
                       ),
                       ListTile(
+                        contentPadding: const EdgeInsets.only(left: 30),
                         leading: Image.asset('assets/img/favicon.png'),
                         title: const Text('Aviso de cámaras de vigilancia'),
                         onTap: () {
-                          
+                          final route = MaterialPageRoute(builder: (context) => const CamerasScreen(),);
+                          Navigator.push(context, route );
                         },
                       ),
                       
@@ -108,7 +128,7 @@ Widget build(BuildContext context) {
           child: Container(
             color: Colors.white,
             child: const Center(
-              child: Text('Contenido'),
+              child: Text('Account'),
             ),
           ),
         ),
