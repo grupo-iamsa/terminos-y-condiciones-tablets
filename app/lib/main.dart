@@ -1,3 +1,4 @@
+import 'package:app/screens/screens.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,12 +10,20 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      initialRoute: 'terms',
+      routes: {
+        'terms' : (BuildContext  context) =>  const TermsScreen(),
+        'provider' : (BuildContext  context) =>  const ProviderScreen(),
+        'web' : (BuildContext  context) =>  const WebScreen(),
+        'email' : (BuildContext  context) =>  const EmailScreen(),
+        'account' : (BuildContext  context) =>  const AccountScreen(),
+        'rh' : (BuildContext  context) =>  const RhScreen(),
+        'reception' : (BuildContext  context) =>  const ReceptionScreen(),
+        'switch' : (BuildContext  context) =>  const SwitchScreen(),
+        'cameras' : (BuildContext  context) =>  const CamerasScreen(),
+      },
     );
   }
 }
