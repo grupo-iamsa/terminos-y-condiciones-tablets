@@ -2,6 +2,7 @@ import 'package:app/screens/screens.dart';
 import 'package:app/widgets/parraf_widget.dart';
 import 'package:app/widgets/widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 
 class TermsScreen extends StatelessWidget {
@@ -452,9 +453,114 @@ class TermsScreen extends StatelessWidget {
                       const TextBoldCustome(text: '*Perros de servicio y/o animales de compañía no tienen costo'),
                       const TextBoldCustome(text: '*Puntos Doters solamente son acumulables a nombre del pasajero.'),
                       const TextBoldCustome(text: '*Sujeto a disponibilidad'),
+                      const SizedBox(height: 20),
+                      Image.asset('assets/img/tabla-reglamentacion.png'),
+                      Image.asset('assets/img/tabla-costos.png'),
                     ]
                   )
                 ),
+                Padding(
+                  padding: const EdgeInsetsDirectional.symmetric(horizontal: 30, vertical: 15),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const SubTitleCustome(subTitle: 'Políticas Mascotas Abordo Cabina Pasajeros'),
+                      const ParrafCustome(text: 'Los clientes podrán llevar consigo mascotas en la cabina de pasajeros: solo se permitirán perros y gatos cumpliendo los siguientes requisitos:'),
+                      const ParrafCustome(text: 'A) Las mascotas deberán viajar dentro de un contenedor o transportadora rígida tipo Kennel o semirrígida que cumpla las siguientes especificaciones:'),
+                      const ListItemCustome(text:'• El peso máximo de la mascota deberá de ser de 15 kg (incluyendo transportadora), las dimensiones máximas de la transportadora son: 71 cm de largo x 52 cm de ancho x 54 cm de alto, solo se permite una mascota por transportadora. Debe contar con espacio suficiente para que tu mascota esté parada, y pueda moverse y girar de forma natural sin tocar las paredes. Nota: si excede de 15 kg de peso, NO PODRÁ VIAJAR.'),
+                      const ListItemCustome(text:'• Debe contar con espacio suficiente para que tu mascota esté parada, y pueda moverse y girar de forma natural sin tocar las paredes.  '),
+                      const ParrafCustome(text: 'B) Se deberá presentar cartilla de vacunación con esquema completo de acuerdo a la edad de la mascota, que especifique la fecha de aplicación de la vacuna contra la rabia y la vigencia de la misma. No es necesario la mascota viaje sedada (Consultar a su médico veterinario).'),
+                      Wrap(
+                        crossAxisAlignment: WrapCrossAlignment.center,
+                        children: [
+                          const ParrafCustome(text:'C) Solo se permitirá trasladar una mascota por pasajero, limitado a 2 mascotas por autobús identificados con la imagen '),
+                          Image.asset('assets/img/pet.png', height: 20),
+                          const ParrafCustome(text: ' o sujeto a disponibilidad.')
+                        ],
+                      ),
+                      const ParrafCustome(text: 'D) El pasajero deberá llevar consigo un kit de limpieza consistente: pañal o tapete absorbente, trapo, bolsa para deshechos. Será responsabilidad del dueño limpiar completamente los desechos de su mascota.'),
+                      const ParrafCustome(text: 'E) La empresa transportará Animales Domésticos braquicéfalos en la cabina de pasajeros cumpliendo con las dimensiones, peso y documentos requeridos, en todos los casos el cliente deberá llenar la carta responsiva correspondiente que especifique que el viaje de la mascota será bajo entera responsabilidad del pasajero debido a la posibilidad de desarrollar el síndrome respiratorio propio de dichas razas.'),
+                      const ParrafCustome(text: 'F) No se permitirá viajar en la cabina de pasajeros a perros de razas catalogadas como peligrosas: Pit Bull Terrier, Staffordshire Bull Terrier, American Staffordshire Terrier, Rottweiler, Dogo Argentino, Fila Brasileiro, Tosa Inu y Akita Inu. O también, dependiendo de su complexión física, musculatura, altura y peso. Solo se permitirá su transportación documentadas en el compartimiento de equipaje.'),
+                      const ParrafCustome(text: 'G) Se deberá cubrir el monto establecido para el traslado de la mascota de acuerdo a la temporada: Baja el 75% del valor del asiento; Alta el 100% del valor del asiento, ambos tomando de base la tarifa de adulto.'),
+                      const TextBoldCustome(text: 'H) En todos los casos se deberá llenar la carta responsiva correspondiente para poder trasladar la mascota.'),
+                    ]
+                  )
+                ),
+                const Padding(
+                  padding: EdgeInsetsDirectional.symmetric(horizontal: 30, vertical: 15),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SubTitleCustome(subTitle: 'Mascotas Documentadas'),
+                      ParrafCustome(text: 'Se podrán llevar consigo mascotas documentadas en el compartimiento de equipaje de la unidades de un piso sin cargo adicional si se cumplen con los siguientes requisitos:'),
+                      ParrafCustome(text: 'A) Las mascotas deberán viajar dentro de un contenedor o transportadora rígida tipo Kennel que cumpla las siguientes especificaciones:'),
+                      ListItemCustome(text: '• El peso máximo de la mascota deberá de ser de 32 kg (incluyendo transportadora), las dimensiones máximas de la transportadora son: 128 cm de largo x 45 cm de ancho x 65 cm de alto. Solo se permite una mascota por transportadora.'),
+                      ListItemCustome(text: '• La transportadora debe contar con espacio suficiente para que tu mascota esté parada, y pueda moverse y girar de forma natural sin tocar las paredes. '),
+                      ListItemCustome(text: '• No debe llevar implementos o accesorios (juguetes, golosinas, premios u otros objetos, elaborados con ingredientes de origen rumiante), de lo contrario, serán retirados para su destrucción.'),
+                      ParrafCustome(text: 'B) En el caso de perros y gatos se deberá presentar Cartilla de vacunación con esquema completo de acuerdo a la edad de la mascota, que especifique la fecha de aplicación de la vacuna contra la rabia y la vigencia de la misma. No es necesario la mascota viaje sedada (Consultar a su médico veterinario).'),
+                      ParrafCustome(text: 'C) En el caso de perros y gatos la mascota deberá tener por lo menos ocho semanas de nacido al momento de realizar el viaje y no requerir de su madre para la alimentación. Al momento del viaje la mascota no debe presentar signos de enfermedades infectocontagiosas, que no presenten heridas recientes o en proceso de cicatrización.'),
+                      ParrafCustome(text: 'D) La empresa no transportará mascotas en el compartimiento de equipaje de las unidades de doble piso, lo anterior con la intención de velar por la vida de la mascota debido a la posibilidad de desarrollar el síndrome respiratorio o cualquier otra afectación.'),
+                      ParrafCustome(text: 'E) En estos casos donde la mascota viaje documentada el cliente deberá llenar la carta responsiva correspondiente que especifique que el viaje de la mascota será bajo entera responsabilidad del pasajero excluyendo a la empresa de cualquier responsabilidad de la salud y vida de la mascota trasladada.'),
+                    ]
+                  )
+                ),
+                const Padding(
+                  padding: EdgeInsetsDirectional.symmetric(horizontal: 30, vertical: 15),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SubTitleCustome(subTitle: 'Animales de apoyo'),
+                      ParrafCustome(text: 'Las personas con discapacidad física, visual, auditiva, mental o intelectual tienen derecho a viajar con un animal de servicio sin cargo adicional. Los animales de servicio serán aceptados en la cabina de pasajeros junto con la persona con discapacidad sin cargo extra, siempre y cuando cumplan los siguientes requisitos:'),
+                      SizedBox(height: 10),
+                      TextBoldCustome(text: 'Animales de apoyo emocional'),
+                      ParrafCustome(text: 'Las mascotas de apoyo emocional deberán cumplir todos los requisitos estipulados para las mascotas abordo.'),
+                      ParrafCustome(text: 'A) Presentar documento emitido al menos doce meses antes del viaje por el médico tratante (psiquiatra, psicólogo) o institución tratante de la persona con discapacidad emocional que avale la necesidad de un animal de apoyo emocional.'),
+                      ParrafCustome(text: 'B) Los Animales de Apoyo Emocional deberán portar correa, arnés y placa de identificación.'),
+                      ParrafCustome(text: 'C) El limite de peso para poder transportar una mascota de apoyo emocional será de 12 kilogramos.'),
+                      ParrafCustome(text: 'D) En caso de no cumplir con alguno de los requisitos aquí señalados, el Animal de Apoyo Emocional será transportado en calidad de mascota en el compartimiento de carga del autobús, bajo las políticas de las mascotas documentadas.'),
+                      SizedBox(height: 10),
+                      TextBoldCustome(text: 'Animales de apoyo visual'),
+                      ParrafCustome(text: 'La empresa permite a los pasajeros con discapacidad visual y/o movilidad reducida estar acompañados durante el viaje de un animal de servicio sin costo, cumpliendo las siguientes políticas: '),
+                      ParrafCustome(text: 'A) Presentar el documento que avale la condición de Animal de Apoyo Visual:'),
+                      ListItemCustome(text: '• Identificación del Animal de Servicio emitida por alguna autoridad en materia de sanidad animal y/u organismo reconocido'),
+                      ListItemCustome(text: '• Algún otro documento que evidencie que el Pasajero con Discapacidad y/o Movilidad Reducida necesita de un Animal de Servicio para su movilidad y/o acompañamiento.'),
+                      ParrafCustome(text: 'B) Los perros deberán portar collar y correa o arnés en todo momento.'),
+                      ParrafCustome(text: 'C) Los perros de apoyo visual deberán utilizar preferente los espacios definidos para su traslado en cabina (Asientos 1,2 y 3 en unidades de un piso; y asientos de planta baja en unidades de dos pisos). Los pasajeros y sus animales de apoyo visual tendrán preferencia en el abordaje para ingresar al autobús antes que los demás pasajeros.'),
+                      ParrafCustome(text: 'D) Cartilla de vacunación con esquema completo de acuerdo a la edad de la mascota, que especifique la fecha de aplicación de la vacuna contra la rabia y la vigencia de la misma.'),
+                    ]
+                  )
+                ),
+                const Padding(
+                  padding: EdgeInsetsDirectional.symmetric(horizontal: 30, vertical: 15),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SubTitleCustome(subTitle: 'COMPROBACIÓN FISCAL (FACTURACIÓN ELECTRÓNICA)'),
+                      ParrafCustome(text: 'Los pases de abordar emitidos por este tipo de compra no tienen validez fiscal, en caso de requerir el comprobante fiscal, deberá generarlo desde nuestro portal web www.etn.com.mx en el apartado de “Facturación Electrónica” dentro del menú al margen superior derecho, para ello es necesario el número de operación del boleto o pase de abordar, número de asiento y los datos fiscales completos.'),
+                    ]
+                  )
+                ),
+                const Padding(
+                  padding: EdgeInsetsDirectional.symmetric(horizontal: 30, vertical: 15),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SubTitleCustome(subTitle: 'RESTRICCIONES PARA FACTURACIÓN'),
+                      ParrafCustome(text: 'Sólo se podrán facturar boletos confirmados (no abiertos) dentro del lapso de 30 días naturales, contados a partir de la fecha del viaje. Una vez generada la factura, ya no se podrá hacer ningún cambio o cancelación en el documento emitido.'),
+                    ]
+                  )
+                ),
+                const Padding(
+                  padding: EdgeInsetsDirectional.symmetric(horizontal: 30, vertical: 15),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SubTitleCustome(subTitle: 'RECUPERACIÓN DE FACTURA'),
+                      ParrafCustome(text: 'Si durante el proceso de facturación no recibió en su correo electrónico el archivo PDF y XML de su comprobante fiscal, podrá recuperarlo accediendo a nuestro portal web www.etn.com.mx en el apartado de "Facturación Electrónica" debiendo capturar el RFC y correo electrónico. Una vez que haya ingresado al módulo, deberá seleccionar "Consultar Historial" e identificar el documento que desee recuperar ya sea reenviándolo nuevamente a su correo, a una cuenta diferente o bien, imprimir la factura nuevamente.'),
+                    ]
+                  )
+                ),
+
 
 
 
