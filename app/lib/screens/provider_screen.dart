@@ -8,6 +8,10 @@ class ProviderScreen extends StatelessWidget {
   @override
 Widget build(BuildContext context) {
 
+  Future.delayed(const Duration(minutes: 10), (){
+    Navigator.pushReplacementNamed(context, 'saver');
+  });
+
   const primaryColor = Color.fromARGB(255, 1, 54, 94);
   const accentColor = Color.fromARGB(255, 15, 187, 207);
 

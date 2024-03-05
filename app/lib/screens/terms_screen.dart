@@ -1,8 +1,6 @@
 import 'package:app/screens/screens.dart';
-import 'package:app/widgets/parraf_widget.dart';
 import 'package:app/widgets/widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 
 class TermsScreen extends StatelessWidget {
@@ -10,6 +8,10 @@ class TermsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+  Future.delayed(const Duration(minutes: 10), (){
+    Navigator.pushReplacementNamed(context, 'saver');
+  });
 
   const primaryColor = Color.fromARGB(255, 1, 54, 94);
   const accentColor = Color.fromARGB(255, 15, 187, 207);
