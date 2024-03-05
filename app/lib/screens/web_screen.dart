@@ -148,7 +148,7 @@ Widget build(BuildContext context) {
                       children: [
                         RichText(
                           text: TextSpan(
-                            style: const TextStyle(fontSize: 16, color: Colors.black),
+                            style: const TextStyle(fontSize: 18, color: Colors.black, height: 1.5),
                             children: [
                               const TextSpan(text: 'ETN TURISTAR LUJO, S.A. DE C.V., con domicilio Saturno #39, Col. Nueva Industrial Vallejo C.P 07700, Alcaldía. Gustavo A. Madero; quien es responsable del tratamiento de sus datos personales, en cumplimiento a lo establecido en la Ley Federal de Protección de Datos Personales en Posesión de los Particulares. Para mayor información acerca del tratamiento, uso, transferencia y remisión de sus Datos Personales, así como de los derechos ARCO que puede hacer valer, ETN TURISTAR LUJO, S.A. DE C.V., pone a su disposición el Aviso de Privacidad Integral en '),
                               textLink('https://etn.com.mx/ '),

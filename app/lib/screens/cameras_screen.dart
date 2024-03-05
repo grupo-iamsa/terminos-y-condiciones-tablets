@@ -150,7 +150,7 @@ Widget build(BuildContext context) {
                         const SizedBox(height: 15),
                         RichText(
                           text: TextSpan(
-                            style: const TextStyle(fontSize: 16, color: Colors.black),
+                            style: const TextStyle(fontSize: 18, color: Colors.black, height: 1.5),
                             children: [
                               const TextSpan(text: 'Para mayor información acerca del tratamiento, uso, transferencia y remisión de sus Datos Personales, así como de los derechos ARCO que puede hacer valer, ponemos a su disposición nuestro Aviso de Privacidad Integral, el cual podrá solicitar a través de nuestro correo electrónico '),
                               textLink('atn_clientes@etn.com.mx'),

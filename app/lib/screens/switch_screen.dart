@@ -157,7 +157,7 @@ Widget build(BuildContext context) {
                       const ParrafCustome(text: 'Así mismo le informamos que ETN TURISTAR LUJO, S.A. de C.V., cuenta con sistema de video vigilancia, por lo que las imágenes y audio, obtenidas por medio de las cámaras de video - seguridad, serán utilizados para fines de identificación, control y seguridad de las personas que se encuentran dentro de estas instalaciones.'),
                       RichText(
                         text: TextSpan(
-                          style: const TextStyle(fontSize: 16, color: Colors.black),
+                          style: const TextStyle(fontSize: 18, color: Colors.black, height: 1.5),
                           children: [
                             const TextSpan(text: 'Para mayor información acerca del tratamiento, uso, transferencia y remisión de sus Datos Personales, así como de los derechos ARCO que puede hacer valer, ETN TURISTAR LUJO, S.A. de C.V., pone a su disposición el Aviso de Privacidad Integral, a través de nuestra página web '),
                             textLink('www.etn.com.mx.'),

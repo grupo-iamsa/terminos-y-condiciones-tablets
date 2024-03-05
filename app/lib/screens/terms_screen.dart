@@ -181,7 +181,7 @@ class TermsScreen extends StatelessWidget {
                       const ParrafCustome(text: 'Cuando debamos hacer cambios importantes en nuestros servicios, publicaremos las modificaciones con 10 días de anticipación para que las Personas Usuarias puedan revisarlas y seguir usando el Servicio. En ningún caso afectarán las operaciones que ya hayan finalizado.'),
                       RichText(
                         text: TextSpan(
-                          style: const TextStyle(fontSize: 16, color: Colors.black),
+                          style: const TextStyle(fontSize: 18, color: Colors.black, height: 1.5),
                           children: [
                             const TextSpan(text: 'En pagos pagados por '),
                             textBold('INTERNET NO HAY CANCELACIONES NI DEVOLUCIONES'),
@@ -205,7 +205,7 @@ class TermsScreen extends StatelessWidget {
                       const ParrafCustome(text: 'Una vez efectuado el pago correspondiente, el sistema enviará de forma automática al correo electrónico capturado en el registro previo, la confirmación del viaje con el pase de abordar.'),
                       RichText(
                         text: TextSpan(
-                          style: const TextStyle(fontSize: 16, color: Colors.black),
+                          style: const TextStyle(fontSize: 18, color: Colors.black, height: 1.5),
                           children: [
                             const TextSpan(text: 'El pago de la reservación de '),
                             textBold('Pago Referenciado OXXO '),
@@ -235,7 +235,7 @@ class TermsScreen extends StatelessWidget {
                       const ParrafCustome(text: '11. Se reubicará sin costo a la próxima salida disponible al pasajero que haya perdido su viaje y llegue a la terminal dentro de los próximos 30 minutos a su hora de salida. Si llega después de los 30 minutos a su hora de salida o requiere salir después u otro día se cobrará 50% de la tarifa adulto.'),
                       RichText(
                         text: TextSpan(
-                          style: const TextStyle(fontSize: 16, color: Colors.black),
+                          style: const TextStyle(fontSize: 18, color: Colors.black, height: 1.5),
                           children: [
                             textBold('Ver Rutas participantes '),
                             textLink('https://etn.com.mx/viajero-anticipado.html')
@@ -255,7 +255,7 @@ class TermsScreen extends StatelessWidget {
                       const ParrafCustome(text: 'Además, deberá proporcionar al momento de abordar el autobús el número de operación y una identificación oficial vigente (sólo se aceptarán: credencial para votar, cédula profesional, licencia de manejo y/o pasaporte).'),
                       RichText(
                         text: TextSpan(
-                          style: const TextStyle(fontSize: 16, color: Colors.black),
+                          style: const TextStyle(fontSize: 18, color: Colors.black, height: 1.5),
                           children: [
                             textBold('Las compras de boletos efectuadas a través del Contact Center, deberán en todo momento ser recogidos en taquillas por lo menos 30 minutos antes del abordaje del autobús con todos los requisitos necesarios, de lo contrario el pasajero no podrá hacer uso del servicio.'),
                           ],
@@ -300,7 +300,7 @@ class TermsScreen extends StatelessWidget {
                       const ParrafCustome(text: 'La confirmación del boleto abierto, también la puede solicitar directamente en taquillas presentando su pase de abordar impreso preferentemente hasta una hora antes de la salida deseada o bien puede hacer su reservación previamente su reservación vía telefónica llamando al 800 8000 386 opción 1 del menú principal.'),
                       RichText(
                         text: TextSpan(
-                          style: const TextStyle(fontSize: 16, color: Colors.black),
+                          style: const TextStyle(fontSize: 18, color: Colors.black, height: 1.5),
                           children: [
                             textBold('Todo boleto abierto deberá ser confirmado previamente de lo contrario, el pasajero no podrá abordar el autobús.'),
                           ],
@@ -319,7 +319,7 @@ class TermsScreen extends StatelessWidget {
                       const ParrafCustome(text: 'Nuestro servicio de cambios, no tiene ningún costo adicional y solamente se podrán realizar máximo hasta dos cambios por boleto, incluyendo en el caso de la compra de boleto abierto la confirmación del mismo. El costo adicional solo aplica en caso de que para la fecha seleccionada, la tarifa sea mayor.'),
                       RichText(
                         text: TextSpan(
-                          style: const TextStyle(fontSize: 16, color: Colors.black),
+                          style: const TextStyle(fontSize: 18, color: Colors.black, height: 1.5),
                           children: [
                             textBold('Cambios en Internet: '),
                             const TextSpan(text: 'Solo podrá cambiar fechas y horarios. Aplica para aquellas compras que hayan sido realizadas por este medio, si se desea modificar el viaje deberá acceder al sitio web www.etn.com.mx y en la sección “Modifique su Itinerario”, ingresar el número de operación y nit de su boleto. Solo podrá realizar cambio de fecha y hora. no está permitido la modificación de Origen, Destino, nombre o tipo de pasajero y solo lo podrá aplicar 90 min. después de su compra y hasta 90 minutos antes del horario de su salida.')
@@ -329,7 +329,7 @@ class TermsScreen extends StatelessWidget {
                       const ParrafCustome(text: 'En el caso de que requiera cambiar más de un boleto con un itinerario diferente, podrá ingresar tantos números de operación como desee separados por un espacio. Si el viaje incluye boletos de algún Menor, el cambio de itinerario deberá realizarse ingresando el número de operación del boleto del Menor junto con el de un Adulto, de lo contrario el sistema no permitirá la modificación si se realiza de manera independiente.'),
                       RichText(
                         text: TextSpan(
-                          style: const TextStyle(fontSize: 16, color: Colors.black),
+                          style: const TextStyle(fontSize: 18, color: Colors.black, height: 1.5),
                           children: [
                             textBold('Cambios en la Taquilla: '),
                             const TextSpan(text: 'Los cambios de fecha, horario y/o ruta podrán realizarse en las taquillas o puntos de venta de ETN Turistar, siendo indispensable presentar el pase de abordar que le generó el portal o el “E-Ticket” que le fue enviado a su correo, así como una identificación oficial vigente (sólo se aceptarán: credencial para votar, cédula profesional, licencia de manejo y pasaporte) para solicitar el cambio correspondiente, debiéndose presentar con un tiempo mínimo de 90 minutos antes de la salida.')
@@ -362,7 +362,7 @@ class TermsScreen extends StatelessWidget {
                       const SubTitleCustome(subTitle: 'TIPOS DE DESCUENTOS'),       
                       RichText(
                         text: TextSpan(
-                          style: const TextStyle(fontSize: 16, color: Colors.black),
+                          style: const TextStyle(fontSize: 18, color: Colors.black, height: 1.5),
                           children: [
                             textBold('En ETN Turistar se otorgan los siguientes descuentos (sujetos a disponibilidad):'),
                           ],
@@ -428,7 +428,7 @@ class TermsScreen extends StatelessWidget {
                       ),
                       RichText(
                         text: TextSpan(
-                          style: const TextStyle(fontSize: 16, color: Colors.black),
+                          style: const TextStyle(fontSize: 18, color: Colors.black, height: 1.5),
                           children: [
                             const TextSpan(text: 'Estas corridas que se ofrecen, están sujetas a ciertos destinos y horarios y sin excepción deberá firmar la carta responsiva correspondiente que exime de cualquier responsabilidad a la organización de la integridad de la mascota.'),
                             textBold('Solicitala en taquilla')
@@ -440,7 +440,7 @@ class TermsScreen extends StatelessWidget {
                         padding: const EdgeInsets.symmetric(vertical: 15),
                         child: RichText(
                           text: TextSpan(
-                            style: const TextStyle(fontSize: 16, color: Colors.black),
+                            style: const TextStyle(fontSize: 18, color: Colors.black, height: 1.5),
                             children: [
                               textBold('** ESTÁ PROHIBIDO EL TRASLADO DE MASCOTAS EN EL COMPARTIMIENTO DE EQUIPAJE PARA UNIDADES DE DOBLE PISO.'),
                             ],

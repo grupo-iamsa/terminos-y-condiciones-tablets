@@ -146,7 +146,7 @@ Widget build(BuildContext context) {
                       const ParrafCustome(text: 'El tratamiento legítimo, controlado e informado de sus datos personales es de vital importancia para alcanzar los objetivos corporativos de ETN TURISTAR LUJO, S.A. DE C.V., a través de todas las áreas del negocio reiterando nuestro compromiso con su privacidad y el derecho a la autodeterminación informativa, por lo que, en cumplimiento a lo establecido en la Ley Federal de Protección de Datos Personales en Posesión de los Particulares, ponemos a su disposición nuestro AVISO DE PRIVACIDAD.'),
                       RichText(
                         text: TextSpan(
-                          style: const TextStyle(fontSize: 16, color: Colors.black),
+                          style: const TextStyle(fontSize: 18, color: Colors.black, height: 1.5),
                           children: [
                             const TextSpan(text: 'Aplicará para todos los productos, servicios, programas, y/o sitios web, que tenga, ETN TURISTAR LUJO, S.A. DE C.V., de acuerdo a la naturaleza de los Datos Personales recabados y conforme a la legislación vigente en materia de privacidad y protección de Datos Personales, ETN TURISTAR LUJO, S.A. DE C.V., podrá publicar nuevos Avisos de Privacidad específicos o actualizaciones y para los cuales se podrá requerir o no, el consentimiento expreso del titular de los Datos Personales, sin embargo a través de nuestra página web '),
                             textLink('https://etn.com.mx/ '),
@@ -167,7 +167,7 @@ Widget build(BuildContext context) {
                       const ParrafCustome(text: 'Para efectos de la divulgación y tratamiento de los Datos Personales que Usted haya divulgado o pudiera llegar a divulgar, a través de diversos medios y formas incluyendo nuestros sitios de Internet, herramientas tecnológicas, o directamente a nuestros representantes, con motivo de la relación o posible relación por el uso de uno de nuestros productos y/o servicios, así como para cualquier actividad relacionada, se considerará que el responsable es ETN TURISTAR LUJO, S.A. DE C.V., quien es una sociedad constituida de conformidad con las leyes de la República Mexicana, con domicilio de oficina central en Capital Reforma, Paseo de la Reforma número 250, Torre A, Piso 23, en la Colonia Juárez, de la Alcaldía Cuauhtémoc, Código Postal 06600, en la Ciudad de México.'),
                       RichText(
                         text: TextSpan(
-                          style: const TextStyle(fontSize: 16, color: Colors.black),
+                          style: const TextStyle(fontSize: 18, color: Colors.black, height: 1.5),
                           children: [
                             const TextSpan(text: 'Para cualquier información sobre este Aviso de Privacidad, o para el ejercicio de cualquiera de sus derechos derivados de sus Datos Personales, el presente Aviso de Privacidad o de la ley aplicable, incluyendo sin limitación sus derechos de acceso, rectificación, cancelación y oposición, por favor contactar a nuestro Departamento de Privacidad, mediante el correo electrónico '),
                             textLink('atn_clientes@etn.com.mx '),
@@ -350,7 +350,7 @@ Widget build(BuildContext context) {
                       const SubTitleCustome(subTitle: 'L. REVOCACIÓN DEL CONSENTIMIENTO'),                      
                       RichText(
                         text: TextSpan(
-                          style: const TextStyle(fontSize: 16, color: Colors.black),
+                          style: const TextStyle(fontSize: 18, color: Colors.black, height: 1.5),
                           children: [
                             const TextSpan(text: 'El consentimiento podrá ser revocado en cualquier momento sin que se le atribuyan efectos retroactivos. Para revocar el consentimiento el Titular debe de enviar una Solicitud por escrito a '),
                             textLink('atn_clientes@etn.com.mx'),
