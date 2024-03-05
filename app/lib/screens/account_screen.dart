@@ -8,6 +8,11 @@ class AccountScreen extends StatelessWidget {
   @override
 Widget build(BuildContext context) {
 
+
+  Future.delayed(const Duration(minutes: 10), (){
+    Navigator.pushReplacementNamed(context, 'saver');
+  });
+
   const primaryColor = Color.fromARGB(255, 1, 54, 94);
   const accentColor = Color.fromARGB(255, 15, 187, 207);
 
@@ -144,7 +149,7 @@ Widget build(BuildContext context) {
                       children: [
                         RichText(
                           text: TextSpan(
-                            style: const TextStyle(fontSize: 16, color: Colors.black),
+                            style: const TextStyle(fontSize: 18, color: Colors.black, height: 1.5),
                             children: [
                               const TextSpan(text: 'ETN TURISTAR LUJO, S.A. DE C.V., con domicilio en con domicilio de oficina central en '),
                               textBold('Capital Reforma, Paseo de la Reforma número 250, Torre A, Piso 23, en la Colonia Juárez, de la Alcaldía Cuauhtémoc, Código Postal 06600, en la Ciudad de México, '),
@@ -155,7 +160,7 @@ Widget build(BuildContext context) {
                         const ParrafCustome(text: 'Los datos personales que recabamos de usted, son para fines de localización de datos en sistema, control estadístico y de seguridad, así como de seguimiento a la relación contractual a la que estamos sujetos con usted, él Titular.'),
                         RichText(
                           text: TextSpan(
-                            style: const TextStyle(fontSize: 16, color: Colors.black),
+                            style: const TextStyle(fontSize: 18, color: Colors.black, height: 1.5),
                             children: [
                               const TextSpan(text: 'Para mayor información acerca del tratamiento, uso, transferencia y remisión de sus Datos Personales, así como de los derechos ARCO que puede hacer valer, ponemos a su disposición nuestro Aviso de Privacidad Integral, en '),
                               textLink('https://etn.com.mx/. '),

@@ -12,8 +12,9 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: 'terms',
+      initialRoute: 'saver',
       routes: {
+        'saver' : (BuildContext  context) =>  const SaverScreen(),
         'terms' : (BuildContext  context) =>  const TermsScreen(),
         'provider' : (BuildContext  context) =>  const ProviderScreen(),
         'web' : (BuildContext  context) =>  const WebScreen(),
